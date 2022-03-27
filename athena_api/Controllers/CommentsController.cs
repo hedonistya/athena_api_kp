@@ -9,7 +9,7 @@ namespace athena_api.Controllers;
 [ApiController]
 public class CommentsController : ControllerHelper<AthenaContext, Comment, int>
 {
-  public CommentsController(AthenaContext context) : base(context, context.Comments)
+  public CommentsController(AthenaContext context) : base(context, context.Comments, "CommentId")
   {
   }
 }

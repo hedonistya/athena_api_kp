@@ -9,7 +9,7 @@ namespace athena_api.Controllers;
 [ApiController]
 public class TaskCoursesController : ControllerHelper<AthenaContext, MissionCourse, int>
 {
-  public TaskCoursesController(AthenaContext context) : base(context, context.MissionCourses)
+  public TaskCoursesController(AthenaContext context) : base(context, context.MissionCourses, "MissionCourseId")
   {
   }
 }

@@ -9,7 +9,7 @@ namespace athena_api.Controllers;
 [ApiController]
 public class UsersController : ControllerHelper<AthenaContext, User, int>
 {
-  public UsersController(AthenaContext context) : base(context, context.Users)
+  public UsersController(AthenaContext context) : base(context, context.Users, "UserId")
   {
   }
 }

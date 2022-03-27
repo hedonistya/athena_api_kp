@@ -9,7 +9,7 @@ namespace athena_api.Controllers;
 [ApiController]
 public class MissionsController : ControllerHelper<AthenaContext, Mission, int>
 {
-  public MissionsController(AthenaContext context) : base(context, context.Missions)
+  public MissionsController(AthenaContext context) : base(context, context.Missions, "MissionId")
   {
   }
 }

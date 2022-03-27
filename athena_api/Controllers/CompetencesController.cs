@@ -9,7 +9,7 @@ namespace athena_api.Controllers;
 [ApiController]
 public class CompetencesController : ControllerHelper<AthenaContext, Competence, int>
 {
-  public CompetencesController(AthenaContext context) : base(context, context.Competences)
+  public CompetencesController(AthenaContext context) : base(context, context.Competences, "CompetenceId")
   {
   }
 }

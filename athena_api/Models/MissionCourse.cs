@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿namespace athena_api.Models;
 
-namespace athena_api.Models
+public class MissionCourse
 {
-    public partial class MissionCourse
-    {
-      
-
-        public int MissionCourseId { get; set; }
-        public string MissionCourseStatus { get; set; } = null!;
-        public int? IdCourse { get; set; }
-        public int? IdMission { get; set; }
-
-       
-    }
+  public int MissionCourseId { get; set; }
+  public string MissionCourseStatus { get; set; } = null!;
+  public int? IdCourse { get; set; }
+  public int? IdMission { get; set; }
 }

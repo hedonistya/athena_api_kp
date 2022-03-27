@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿namespace athena_api.Models;
 
-namespace athena_api.Models
+public class Competence
 {
-    public partial class Competence
-    {
-       
-
-        public int CompetenceId { get; set; }
-        public string Title { get; set; } = null!;
-
-    
-    }
+  public int CompetenceId { get; set; }
+  public string Title { get; set; } = null!;
 }

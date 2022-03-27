@@ -9,7 +9,7 @@ namespace athena_api.Controllers;
 [ApiController]
 public class EvaluationController : ControllerHelper<AthenaContext, Evaluation, int>
 {
-  public EvaluationController(AthenaContext context) : base(context, context.Evaluations)
+  public EvaluationController(AthenaContext context) : base(context, context.Evaluations, "EvaluationId")
   {
   }
 }

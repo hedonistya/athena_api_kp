@@ -9,7 +9,7 @@ namespace athena_api.Controllers;
 [ApiController]
 public class SchedulesController : ControllerHelper<AthenaContext, Schedule, int>
 {
-  public SchedulesController(AthenaContext context) : base(context, context.Schedules)
+  public SchedulesController(AthenaContext context) : base(context, context.Schedules, "ScheduleId")
   {
   }
 }
